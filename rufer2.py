@@ -6,11 +6,11 @@ class TestWin(QWidget):
        self.initUI()       #устанавливает связи между элементами
        self.connects()       #устанавливает, как будет выглядеть окно (надпись, размер, место)
        self.set_appear()       # старт:
-       self.show()
+       self.show() # старт:
    def initUI(self):      ''' создаёт графические элементы '''
-       self.btn_next = QPushButton('txt_next', self)
-       self.hello_text = QLabel('txt_hello')
-       self.instruction = QLabel('txt_instruction')
+       self.btn_next = QPushButton('txt_next', self) # старт:
+       self.hello_text = QLabel('txt_hello') # старт:
+       self.instruction = QLabel('txt_instruction') # старт:
        self.layout_line = QVBoxLayout()
        self.layout_line.addWidget(self.hello_text, alignment = Qt.AlignLeft)
        self.layout_line.addWidget(self.instruction, alignment = Qt.AlignLeft)
